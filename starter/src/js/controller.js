@@ -22,13 +22,14 @@ const controlRecipes = async function () {
 
     recipeView.renderSpinner();
 
+    // 0) update results view to mark selected search result
+    resultsView.update(model.getSearchResultsPage());
+
     // 1) Loading Recipe
     await model.loadRecipe(id);
 
     // 2) Rendering recipe
     recipeView.render(model.state.recipe);
-
-    //TEST
   } catch (err) {
     recipeView.renderError();
   }
