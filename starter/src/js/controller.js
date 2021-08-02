@@ -4,6 +4,7 @@ import recipeView from './views/recipeView.js';
 import resultsView from './views/resultsView.js';
 import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
+import addRecipeView from './views/addRecipeView.js';
 
 import 'core-js/stable'; // for polyfilling everything else except for async/await
 import 'regenerator-runtime/runtime'; // for pollyfilling async/await
